@@ -30,6 +30,7 @@ footer {
 .topcontent,
 header i {
   margin-right: 5%;
+  cursor: pointer;
 }
 
 #Title {
@@ -39,7 +40,7 @@ header i {
 
 #container {
   height: 80vh;
-  background-color: rgba(214, 226, 214, 0.3);
+  background-color: rgba(154, 161, 165, 0.3);
   width: 60%;
   margin-left: 20%;
   margin-top: 40px;
@@ -102,7 +103,6 @@ header i {
   justify-content: space-between;
   background-color: #becbca;
   margin-bottom: 10px;
-  border: 1px solid black;
   box-sizing: content-box;
   width: 80%;
   padding-right: 20px;

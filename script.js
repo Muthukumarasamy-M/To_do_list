@@ -1,6 +1,9 @@
 document.getElementById("addbtn").addEventListener("click", addTask);
-
+document.getElementById("inputdate").min = new Date()
+  .toISOString()
+  .split("T")[0];
 displayTasks();
+
 function addTask() {
   const inputElement = document.getElementById("input");
   const deadlineElement = document.getElementById("inputdate");
