@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+header {
+  background-color: bisque;
+  height: 90px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  color: rgb(58, 53, 53);
+  align-items: center;
+}
+footer {
+  margin-top: 10%;
+  background-color: #333; /* Background color for the footer */
+  color: white; /* Text color for the footer */
+  padding: 20px; /* Padding for the footer content */
+  text-align: center; /* Center-align text */
+}
+
+#owner {
+  margin: 0; /* Remove default margin for the paragraph */
+  font-size: 1.2em; /* Adjust the font size as needed */
+}
+.topcontent,
+header i {
+  margin-right: 5%;
+}
+
+#Title {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+#container {
+  height: 80vh;
+  background-color: rgba(214, 226, 214, 0.3);
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 40px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#addtask {
+  padding-top: 20px;
+  padding-left: 5%;
+  background-color: #b0615e;
+  display: flex;
+  align-items: center;
+}
+
+#input,
+#addbtn {
+  height: 40px;
+  font-size: 1em;
+}
+#input {
+  width: 60%;
+  margin-right: 3%;
+  border-radius: 2px;
+  border: 1px solid black;
+  margin-bottom: 1%;
+  padding: 8px 12px 8px 20px; /* Top Right Bottom Left */
+  color: rgb(51, 49, 49);
+}
+#deadline {
+  margin-right: 2%;
+  color: #fff;
+}
+.fa-calendar-days {
+  font-size: 24px;
+  margin-right: 3%; /* Adjust the size as needed */
+}
+#addbtn {
+  width: 10%; /* Adjust the width as needed */
+  cursor: pointer;
+}
+#input::placeholder {
+  padding-left: 20px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+.taskContainer {
+  margin-left: 7%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #becbca;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  box-sizing: content-box;
+  width: 80%; /* Adjust the width as needed */
+  padding-right: 20px;
+}
+.taskContainer:hover {
+  background-color: #95bbc3;
+  cursor: pointer;
+}
+.taskContainer button.deleteTask {
+  display: none; /* Initially hide delete button */
+}
+
+.taskContainer:hover button.deleteTask {
+  display: inline-block; /* Show delete button on hover */
+}
+
+.taskContainer div {
+  padding-left: 20px;
+}
+
+#alltasks {
+  margin-top: 30px;
+}
+
+button.deleteTask {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+button.deleteTask:hover {
+  background-color: #c9302c;
+}
+
+.sd-container {
+  position: relative;
+  float: left;
+  margin-right: 4%;
+}
+.sd {
+  border: 1px solid #1cbaa5;
+  padding: 5px 10px;
+  height: 30px;
+  width: 150px;
+}
+.open-button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  pointer-events: none;
+}

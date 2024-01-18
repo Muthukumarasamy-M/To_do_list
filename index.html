@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="images/list.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/72f0c5d220.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="Title">Task Tracker</h1>
+      <p class="topcontent" id="home">Home</p>
+      <p class="topcontent" id="features">Features</p>
+      <p class="topcontent" id="contact">Contact</p>
+      <i class="fas fa-user"></i>
+    </header>
+    <main>
+      <div id="container">
+        <form id="taskForm">
+          <div id="addtask">
+            <input type="text" id="input" placeholder="Add task here" />
+
+            <div class="sd-container">
+              <input class="sd" type="date" id="inputdate" />
+              <span class="open-button">
+                <i class="fa-solid fa-calendar-days fa" id="calendarIcon"></i>
+              </span>
+            </div>
+            <input type="button" value="Add" id="addbtn" />
+          </div>
+        </form>
+        <div id="alltasks">
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <small> Copyright © 2024 MKS . All Rights Reserved. </small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
